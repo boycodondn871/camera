@@ -1,0 +1,252 @@
+@charset "utf-8";
+// ===================================================================
+//  common.css
+// ===================================================================
+@import "_mixin/mixin";
+//----------------------------------------------------
+//  共通
+//----------------------------------------------------
+@font-face {
+  font-family: 'abbeyroadregular';
+  src: url('../fonts/abberoad-webfont.woff2') format('woff2'),
+       url('../fonts/abberoad-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+//----------------------------------------------------
+//----------------------------------------------------
+html {
+  font-size: 10px;
+}
+body {
+  overflow-wrap: break-word;
+}
+a,
+a:link,
+a:visited,
+a:active,
+a:hover,
+a:hover img {
+  text-decoration: none;
+  color: #111;
+  // filter: alpha(opacity=80);
+  // -ms-filter: "alpha(opacity=80)";
+  // opacity: .80;
+}
+a:hover {
+  text-decoration: none;
+}
+a:hover,
+a:hover img,
+.img_hover:hover {
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+  opacity: .80;
+}
+a {
+  color: #111;
+  transition: opacity .3s ease-out;
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+div,
+p {
+  /*word-break: break-all;*/
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, nav, picture {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+body,
+td,
+th,
+input,
+textarea {
+  color: #111;
+  font-family: "Yu Gothic", YuGothic, 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3', Tahoma, "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", Verdana, Arial, sans-serif;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 1.5;
+}
+//---------------------------------------------------------------------------
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+figure, picture {
+  line-height: 0;
+}
+picture {
+  display: block;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+//---------------------------------------------------------------------------
+body {
+  font-feature-settings : "palt";
+}
+
+// nhung file nao khong co thi xoa di. khong thi gulp se k chay
+@include min-screen() {
+  @import "./_common_pc.scss";
+  @import "./_header_pc.scss";
+  @import "./_footer_pc.scss";
+  @import "./_style_pc.scss";
+  @import "./page/strength/_style_pc.scss";
+  @import "./page/detail/_style_pc.scss";
+  @import "./page/custom/_style_pc.scss";
+  @import "./page/privacy/_style_pc.scss";
+  @import "./page/faq/_style_pc.scss";
+  @import "./page/profile/_style_pc.scss";
+  @import "./_product_pc.scss";
+  @import "./_contact_pc.scss";
+  @import "./_recruit_pc.scss";
+  @import "./_testing_pc.scss";
+  .headerimg {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+}
+
+// nhung file nao khong co thi xoa di. khong thi gulp se k chay
+@include max-screen() {
+  @import "./_common_sp.scss";
+  @import "./_header_sp.scss";
+  @import "./_footer_sp.scss";
+  @import "./_style_sp.scss";
+  @import "./page/strength/_style_sp.scss";
+  @import "./page/detail/_style_sp.scss";
+  @import "./page/custom/_style_sp.scss";
+  @import "./page/privacy/_style_sp.scss";
+  @import "./page/faq/_style_sp.scss";
+  @import "./page/profile/_style_sp.scss";
+  @import "./_product_sp.scss";
+  @import "./_contact_sp.scss";
+  @import "./_recruit_sp.scss";
+  @import "./_testing_sp.scss";
+  .headerimg {
+    text-align: center;
+    margin-bottom: vw(50);
+  }
+}
+//
+.fadeInUp{
+  opacity: 0;
+  transform: translateY(100px);
+  &.active{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.fadeInRight{
+  opacity: 0;
+  transform: translateX(100px);
+  &.active{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.fadeInLeft{
+  opacity: 0;
+  transform: translateX(-100px);
+  &.active{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.fadeIn{
+  opacity: 0;
+  transform: scale(.9);
+  &.active{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.delay_03 {
+  transition-property: opacity,transform,-webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0.3s;
+}
+.delay_06 {
+  transition-property: opacity,transform,-webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0.6s;
+}
+.delay_09 {
+  transition-property: opacity,transform,-webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0.9s;
+}
+.delay_12 {
+  transition-property: opacity,transform,-webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 1.2s;
+}
+.delay_15 {
+  transition-property: opacity,transform,-webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 1.5s;
+}
+.delay_18 {
+  transition-property: opacity,transform,-webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 1.8s;
+}
+.delay_21 {
+  transition-property: opacity,transform,-webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 2.1s;
+}
+.delay_24 {
+  transition-property: opacity,transform,-webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 2.4s;
+}
+.delay_27 {
+  transition-property: opacity,transform,-webkit-transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 2.7s;
+}

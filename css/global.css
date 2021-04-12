@@ -1,0 +1,135 @@
+
+/* =====================position============================ */
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
+.sticky{
+  position: sticky;
+}
+
+/* ======================vi tri của chữ===================== */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* ================chữ hoa chữ thường đầu câu======================= */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* ======================display====================== */
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+.d-block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-nowrap{
+  flex-wrap: nowrap;
+}
+
+/* ==================justify content trong flex=================== */
+.justify-left {
+  justify-content: left;
+}
+
+.justify-right {
+  justify-content: right;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-flexstart {
+  justify-content: flex-start;
+}
+
+.justify-flexend {
+  justify-content: flex-end;
+}
+
+.justify-spacearound {
+  justify-content: space-around;
+}
+
+.justify-spacebetween {
+  justify-content: space-between;
+}
+
+/* ==================float======================= */
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+/* ======================text color========================= */
+.text-red {
+  color: red;
+}
+.text-orange {
+  color: orange;
+}
+.text-tomato {
+  color: tomato;
+}
+.text-green {
+  color: green;
+}
+.text-blue {
+  color: blue;
+}
+.text-yellow {
+  color: yellow;
+}
+.text-gray {
+  color: gray;
+}
+.text-grey {
+  color: grey;
+}
+.text-white {
+  color: white;
+}

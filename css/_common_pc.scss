@@ -1,0 +1,26 @@
+@charset "utf-8";
+// ===================================================================
+//  common_pc.css
+// ===================================================================
+a[href^=tel] {
+  pointer-events: none;
+  text-decoration: none;
+  cursor: default !important;
+}
+.show_sp {
+  display: none !important;
+}
+.container {
+  overflow: hidden;
+  min-width: ???px;
+}
+.row {
+  max-width: ???px;
+  width: 100%;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}

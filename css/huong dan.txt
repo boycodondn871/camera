@@ -1,0 +1,4 @@
+﻿vô common.scss xóa những file không có import đi . nếu không gulp sẽ k chạy
+
+sua lai ?? trong mixin.scss	$design_width_pc: ????;
+sua lai min width trong common pc.scss		????
