@@ -122,19 +122,19 @@ body {
 // nhung file nao khong co thi xoa di. khong thi gulp se k chay
 @include min-screen() {
   @import "./_common_pc.scss";
-  @import "./_header_pc.scss";
-  @import "./_footer_pc.scss";
-  @import "./_style_pc.scss";
-  @import "./page/strength/_style_pc.scss";
-  @import "./page/detail/_style_pc.scss";
-  @import "./page/custom/_style_pc.scss";
-  @import "./page/privacy/_style_pc.scss";
-  @import "./page/faq/_style_pc.scss";
-  @import "./page/profile/_style_pc.scss";
-  @import "./_product_pc.scss";
-  @import "./_contact_pc.scss";
-  @import "./_recruit_pc.scss";
-  @import "./_testing_pc.scss";
+  // @import "./_header_pc.scss";
+  // @import "./_footer_pc.scss";
+  // @import "./_style_pc.scss";
+  // @import "./page/strength/_style_pc.scss";
+  // @import "./page/detail/_style_pc.scss";
+  // @import "./page/custom/_style_pc.scss";
+  // @import "./page/privacy/_style_pc.scss";
+  // @import "./page/faq/_style_pc.scss";
+  // @import "./page/profile/_style_pc.scss";
+  // @import "./_product_pc.scss";
+  // @import "./_contact_pc.scss";
+  // @import "./_recruit_pc.scss";
+  // @import "./_testing_pc.scss";
   .headerimg {
     text-align: center;
     margin-bottom: 50px;
@@ -145,19 +145,19 @@ body {
 // nhung file nao khong co thi xoa di. khong thi gulp se k chay
 @include max-screen() {
   @import "./_common_sp.scss";
-  @import "./_header_sp.scss";
-  @import "./_footer_sp.scss";
-  @import "./_style_sp.scss";
-  @import "./page/strength/_style_sp.scss";
-  @import "./page/detail/_style_sp.scss";
-  @import "./page/custom/_style_sp.scss";
-  @import "./page/privacy/_style_sp.scss";
-  @import "./page/faq/_style_sp.scss";
-  @import "./page/profile/_style_sp.scss";
-  @import "./_product_sp.scss";
-  @import "./_contact_sp.scss";
-  @import "./_recruit_sp.scss";
-  @import "./_testing_sp.scss";
+  // @import "./_header_sp.scss";
+  // @import "./_footer_sp.scss";
+  // @import "./_style_sp.scss";
+  // @import "./page/strength/_style_sp.scss";
+  // @import "./page/detail/_style_sp.scss";
+  // @import "./page/custom/_style_sp.scss";
+  // @import "./page/privacy/_style_sp.scss";
+  // @import "./page/faq/_style_sp.scss";
+  // @import "./page/profile/_style_sp.scss";
+  // @import "./_product_sp.scss";
+  // @import "./_contact_sp.scss";
+  // @import "./_recruit_sp.scss";
+  // @import "./_testing_sp.scss";
   .headerimg {
     text-align: center;
     margin-bottom: vw(50);
