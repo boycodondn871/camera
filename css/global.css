@@ -1,4 +1,5 @@
 
+
 /* =====================position============================ */
 .relative{
   position: relative;
@@ -48,7 +49,7 @@
   display: inline;
 }
 
-.d-inline-block {
+.d-inblock {
   display: inline-block;
 }
 .d-block {
@@ -66,6 +67,13 @@
 .flex-nowrap{
   flex-wrap: nowrap;
 }
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* ==================justify content trong flex=================== */
 .justify-left {
@@ -96,7 +104,7 @@
   justify-content: space-between;
 }
 
-/* ==================float======================= */
+/* ================float======================= */
 .f-left {
   float: left;
 }
@@ -105,31 +113,43 @@
   float: right;
 }
 
-/* ======================text color========================= */
-.text-red {
-  color: red;
+/* ======================color========================= */
+.red {
+  color: #c62828;
 }
-.text-orange {
-  color: orange;
+.orange {
+  color: #EF6C00;
 }
-.text-tomato {
-  color: tomato;
+.tomato {
+  color: #D84315;
 }
-.text-green {
-  color: green;
+.green {
+  color: #2E7D32;
 }
-.text-blue {
-  color: blue;
+.purple {
+  color: #6A1B9A;
 }
-.text-yellow {
-  color: yellow;
+.pink {
+  color: #C2185B;
 }
-.text-gray {
-  color: gray;
+.blue {
+  color: #1565C0;
 }
-.text-grey {
-  color: grey;
+.lightblue {
+  color: #0288D1;
 }
-.text-white {
+.yellow {
+  color: #F9A825;
+}
+.gray {
+  color: #424242;
+}
+.grey {
+  color: #616161;
+}
+.white {
   color: white;
+}
+.black {
+  color: black;
 }

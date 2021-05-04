@@ -20,39 +20,396 @@
 
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="./css/thuvienGRIDchinhsua.css">
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/common.css">
-  <style>
-    .child{
-      border: 1px solid #000;
-      height: 150px;
-    }
-  </style>
+  
 </head>
 <body>
-  <div class="grid">
-    <div class="grid-row ">
-      <div class="col l-3 m-4 s-12">
-        <div class="child text-center text-red">11</div>
-      </div>
-      <div class="col l-3 m-4 s-12">
-        <div class="child text-center text-red">21</div>
-      </div>
-      <div class="col l-3 m-4 s-12">
-        <div class="child text-center text-red">31</div>
-      </div>
-      <div class="col l-3 m-4 s-12">
-        <div class="child text-center text-red">41</div>
+  <!-- <div id="loading" class="loading">
+    <div class="intersecting-circles-spinner" id="circle">
+      <div class="spinnerBlock">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
       </div>
     </div>
+  </div> -->
+  <!-- =======end loading======= -->
+  <div id="popup" class="popup flex-center">
+    <figure class="popup-img flex-center">
+      <img src="./picture/gift.png" alt="">
+    </figure>
+    <div class="popup-content flex-center">
+      <div>
+        <h1>khuyen mai tung bung</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magnam deleniti quisquam aliquam veritatis quia.</p>
+        <a href="" class="popup-btn flex-center">Mua ngay</a>
+      </div>
+    </div>
+    <div class="popup-close flex-center">X</div>
   </div>
+  <!-- ========end popup======= -->
+  <div class='overlay'>abcd</div>
+  <!-- ========end overlay====== -->
+  <div id="container" class="container">
+    <header id="header" class="header">
+      <div class="row header-row flex justify-spacebetween">
+        <h1 class="logo">
+          <a href="index.html">
+          <img src="./picture/logo.png" alt="">
+          </a>
+        </h1>
+        <div class="search">
+          <input type="text" placeholder="Nhập từ tìm kiếm">
+          <select id="search-list" name="search-list">
+            <option value="all">Tất cả trang</option>
+            <option value="camera">Camera giám sát</option>
+            <option value="camera-wifi">Camera Wifi</option>
+            <option value="alarm">Thiết bị báo động</option>
+            <option value="smarthome">Smart Home</option>
+            <option value="wifi-lan">Thiết bị viễn thông</option>
+          </select>
+          <button type="submit"><i class="fas fa-search"></i>Search</button>
+        </div>
+      </div>
+    </header>
+    <nav id="menu-list" >
+      <div class="row nav-row">
+        <ul class="menu-list flex flex-no-wrap justify-spacebetween">
+          <li class="menu-items"><a href=""><i class="fas fa-bars"></i>Danh mục sản phẩm</a></li>
+          <li class="menu-items"><a href="">Sản phẩm khuyến mãi</a></li>
+          <li class="menu-items"><a href="">Giao hàng nhanh 24h</a></li>
+          <li class="menu-items"><a href="">7 ngày đổi trả</a></li>
+          <li class="menu-items"><a href="">100% Chính hãng</a></li>
+          <li class="menu-items"><a href="">Bảo hành tận nơi</a></li>
+        </ul>
+      </div>  
+    </nav>
+    <main>
+      <div id="block" class="block row flex  justify-spacebetween">
+        <nav id="product-list">
+          <ul class="product-list" >
+            <li class="product-items"><a href="">Combo Camera</a></li>
+            <li class="product-items"><a href="">Camera giám sát</a></li>
+            <li class="product-items"><a href="">Camera Wifi</a></li>
+            <li class="product-items"><a href="">Thiết bị báo động</a></li>
+            <li class="product-items"><a href="">Thiết bị Smart Home</a></li>
+            <li class="product-items"><a href="">Thiết bị viễn thông</a></li>
+          </ul>
+        </nav>
+        <div id="slide-main">
+          <div class="swiper-container slide-main">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="./picture/2.jpg" alt="">
+                  </figure>
+                </a>  
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="./picture/3.jpg" alt="">
+                  </figure>
+                </a>  
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <figure>
+                    <img src="./picture/4.jpg" alt="">
+                  </figure>
+                </a>  
+              </div>
+             
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets flex-center">
+                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+            </div> -->
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button"></div>
+            <div class="swiper-button-next swiper-button"></div>
+          
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+          
+        </div>  
+      </div>
+      <div id="hot" class="hot">
+        <div class="row row-hot">
+          <div class="row-heading tab_container js-tabs">
+            <h2 class="heading heading-camera">
+              camera wifi
+            </h2>  
+            <div class="tabs">
+                <a href="#content1-panel" id="content1-tab" class="tab active">Ezviz</a>
+                <a href="#content2-panel" id="content2-tab" class="tab">Imou</a>
+                <a href="#content3-panel" id="content3-tab" class="tab">KbOne</a>
+                <a href="#content4-panel" id="content4-tab" class="tab">Vantech</a>
+                <a href="#content5-panel" id="content5-tab" class="tab">Ebitcam</a>
+                <a href="#content6-panel" id="content6-tab" class="tab">Yosee</a>
+            </div>
+              <div class="panels">
+                <div id="content1-panel" class="panel active grid">
+                    <div class="grid-row ">
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+
+                      </div>
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+                      </div>
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+                      </div>
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+                      </div>
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+                      </div>
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+                      </div>
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+                      </div>
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+                      </div>
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+                      </div>
+                      <div class="col col1 l-2-4 m-4 s-6">
+                        <div class="new-icon"><img src="./picture/new_icon.gif" alt=""></div>
+                        <a href="">
+                          <img src="./picture/ezviz-c6n.jpg" alt="">
+                        </a>
+                        <div class="detail">
+                          <h3>Camera Ezviz C6N 2.0 MP</h3>
+                          <span>1.150.000 đ</span><small>-20%</small>
+                          <p>850.000 đ</p>
+                        </div>
+                        <p class="cart"><i class="fas fa-cart-plus"></i>Them vao gio hang</p>
+                      </div>
+                    </div>
+                </div>
+                <div id="content2-panel" class="panel grid">
+                  <div class="grid-row">
+                    <div class="col l-2-4 m-4 s-6">1</div>
+                    <div class="col l-2-4 m-4 s-6">2</div>
+                    <div class="col l-2-4 m-4 s-6">3</div>
+                    <div class="col l-2-4 m-4 s-6">4</div>
+                    <div class="col l-2-4 m-4 s-6">5</div>
+                    <div class="col l-2-4 m-4 s-6">6</div>
+                    <div class="col l-2-4 m-4 s-6">7</div>
+                    <div class="col l-2-4 m-4 s-6">8</div>
+                    <div class="col l-2-4 m-4 s-6">9</div>
+                    <div class="col l-2-4 m-4 s-6">10</div>
+                  </div>                     
+                </div>
+                <div id="content3-panel" class="panel grid">
+                  <div class="grid-row">
+                    <div class="col l-2-4 m-4 s-6">1</div>
+                    <div class="col l-2-4 m-4 s-6">2</div>
+                    <div class="col l-2-4 m-4 s-6">3</div>
+                    <div class="col l-2-4 m-4 s-6">4</div>
+                    <div class="col l-2-4 m-4 s-6">5</div>
+                    <div class="col l-2-4 m-4 s-6">6</div>
+                    <div class="col l-2-4 m-4 s-6">7</div>
+                    <div class="col l-2-4 m-4 s-6">8</div>
+                    <div class="col l-2-4 m-4 s-6">9</div>
+                    <div class="col l-2-4 m-4 s-6">10</div>
+                  </div>  
+                </div>
+                <div id="content4-panel" class="panel grid">
+                  <div class="grid-row">
+                    <div class="col l-2-4 m-4 s-6">1</div>
+                    <div class="col l-2-4 m-4 s-6">2</div>
+                    <div class="col l-2-4 m-4 s-6">3</div>
+                    <div class="col l-2-4 m-4 s-6">4</div>
+                    <div class="col l-2-4 m-4 s-6">5</div>
+                    <div class="col l-2-4 m-4 s-6">6</div>
+                    <div class="col l-2-4 m-4 s-6">7</div>
+                    <div class="col l-2-4 m-4 s-6">8</div>
+                    <div class="col l-2-4 m-4 s-6">9</div>
+                    <div class="col l-2-4 m-4 s-6">10</div>
+                  </div>
+                </div>
+                <div id="content5-panel" class="panel grid">
+                  <div class="grid-row">
+                    <div class="col l-2-4 m-4 s-6">1</div>
+                    <div class="col l-2-4 m-4 s-6">2</div>
+                    <div class="col l-2-4 m-4 s-6">3</div>
+                    <div class="col l-2-4 m-4 s-6">4</div>
+                    <div class="col l-2-4 m-4 s-6">5</div>
+                    <div class="col l-2-4 m-4 s-6">6</div>
+                    <div class="col l-2-4 m-4 s-6">7</div>
+                    <div class="col l-2-4 m-4 s-6">8</div>
+                    <div class="col l-2-4 m-4 s-6">9</div>
+                    <div class="col l-2-4 m-4 s-6">10</div>
+                  </div>
+                </div>
+                <div id="content6-panel" class="panel grid">
+                  <div class="grid-row">
+                    <div class="col l-2-4 m-4 s-6">1</div>
+                    <div class="col l-2-4 m-4 s-6">2</div>
+                    <div class="col l-2-4 m-4 s-6">3</div>
+                    <div class="col l-2-4 m-4 s-6">4</div>
+                    <div class="col l-2-4 m-4 s-6">5</div>
+                    <div class="col l-2-4 m-4 s-6">6</div>
+                    <div class="col l-2-4 m-4 s-6">7</div>
+                    <div class="col l-2-4 m-4 s-6">8</div>
+                    <div class="col l-2-4 m-4 s-6">9</div>
+                    <div class="col l-2-4 m-4 s-6">10</div>
+                  </div>
+                </div>
+            </div>          
+            </div>
+        </div>
+      </div>
+      <div id="camera" class="camera">
+        <div class="row row-camera">
+          <div class="row-heading">
+            <h2 class="heading heading-camera">
+              camera
+            </h2>  
+          </div>
+        </div>
+      </div>
+      <div id="smarthome" class="smarthome">
+        <div class="row row-smarthome">
+          <div class="row-heading">
+            <h2 class="heading heading-smarthome">
+              smarthome
+            </h2>
+          </div>
+        </div>
+      </div>  
+      <div id="wifi-lan" class="wifi-lan">
+        <div class="row row-wifi-lan">
+          <div class="row-heading">
+            <h2 class="heading heading-wifi">
+              wifi
+            </h2> 
+          </div>
+        </div>
+      </div>
+    </main>
 
 
 
-    <!-- <script src="./js/libs.js"></script>
-    <script src="./js/base.js"></script>
-    <script src="./js/swiper.js"></script>  -->
+
+
+  <footer id="footer" class="footer">
+    <div class="row footer-row">
+      footer
+    </div>
+  
+  </footer>
+</div>
+
+
+
+
+    <script src="./js/libs.js"></script>
+    <!-- <script src="./js/base.js"></script> -->
+    <script src="./js/swiper.js"></script> 
+    <script src="./js/script.js"></script>
 </body>
 </html>
 
