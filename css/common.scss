@@ -142,7 +142,7 @@ body {
 }
 
 // nhung file nao khong co thi xoa di. khong thi gulp se k chay
-@include max-screen() {
+@include mid-screen() {
   @import "./_common_sp.scss";
   // @import "./_header_sp.scss";
   // @import "./_footer_sp.scss";
@@ -162,6 +162,29 @@ body {
     margin-bottom: vw(50);
   }
 }
+// nhung file nao khong co thi xoa di. khong thi gulp se k chay
+@include max-screen() {
+  @import "./_common_ssp.scss";
+  // @import "./_header_sp.scss";
+  // @import "./_footer_sp.scss";
+  // @import "./_style_sp.scss";
+  // @import "./page/strength/_style_sp.scss";
+  // @import "./page/detail/_style_sp.scss";
+  // @import "./page/custom/_style_sp.scss";
+  // @import "./page/privacy/_style_sp.scss";
+  // @import "./page/faq/_style_sp.scss";
+  // @import "./page/profile/_style_sp.scss";
+  // @import "./_product_sp.scss";
+  // @import "./_contact_sp.scss";
+  // @import "./_recruit_sp.scss";
+  // @import "./_testing_sp.scss";
+  .headerimg {
+    text-align: center;
+    margin-bottom: vw(50);
+  }
+}
+
+
 //
 .popup{
   position: fixed;
@@ -171,7 +194,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $color5;
-  opacity: 0;
+  opacity: 1;
   border-radius: 20px;
   z-index: 10000;
   transition: all .4s ease;
@@ -237,6 +260,7 @@ body {
   left: 0;
   z-index: 999;
   opacity: 1;
+  // display: none;
 }
 .loading {
   background: #fff;
@@ -246,7 +270,7 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
   z-index: 19999;
   opacity: 1;
@@ -258,6 +282,7 @@ body {
   //   opacity: 1;
   //   left: 0;
   // }
+
   &.end {
     opacity: 0;
     z-index: -1;
@@ -266,6 +291,70 @@ body {
 
   }
 }
+
+
+.heart{
+  position: fixed;
+  height: 380px;
+  width: 250px;
+  left: 50%;
+  border-radius: 600px 600px 0 0;
+  transform: rotate(45deg) translateX(-50%) ;
+  background-color: #d16ba5;
+  margin-top: 10vh;
+}
+.heart::before{
+  position: absolute;
+  content:"";
+  width: 250px;
+  height: 380px;
+  top: 65px;
+  left: -65px;
+  z-index: -1;
+  border-radius: 0 0 600px 600px;
+  transform: rotate(90deg);
+  background-color: #d16ba5; 
+}        
+
+
+.typing-text {
+  height: 100vh;
+  // margin-top: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 36ch;
+  animation: typing 3s steps(36), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5em;
+  font-weight: bold;
+  color: $color4;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+
+
+
 // .intersecting-circles-spinner, .intersecting-circles-spinner * {
 //   box-sizing: border-box;
 // }
@@ -337,6 +426,31 @@ body {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@keyframes coccoc-alo-circle-img-anim {
+  0% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+  10% {
+      transform: rotate(-25deg) scale(1) skew(1deg)
+  }
+  20% {
+      transform: rotate(25deg) scale(1) skew(1deg)
+  }
+  30% {
+      transform: rotate(-25deg) scale(1) skew(1deg)
+  }
+  40% {
+      transform: rotate(25deg) scale(1) skew(1deg)
+  }
+  50% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+  100% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+}
+
 
 
 .fadeInUp{

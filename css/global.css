@@ -1,4 +1,4 @@
-
+﻿
 
 /* =====================position============================ */
 .relative{
@@ -152,4 +152,20 @@
 }
 .black {
   color: black;
+}
+
+
+.btn {
+    min-width: 100px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: lightblue;
+    text-align: center;
 }

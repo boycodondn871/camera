@@ -20,8 +20,8 @@
 .grid-row {
    display: flex;
    flex-wrap: wrap;
-   margin-left: -8px;
-   margin-right: -8px;
+   margin-left: -4px;
+   margin-right: -4px;
 }
 /* grid con khong co khoang cach */
 .grid-row.no-gutters {
@@ -36,10 +36,88 @@
 
 /* tao doi tuong collumn. padding nguoc lai voi grid-row */
 .col {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
+.ss-0 {
+    display: none;
+ }
+ 
+ .ss-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+ }
+ 
+ .ss-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+ }
+ 
+ .ss-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+ }
+ 
+ .ss-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+ }
+ 
+ .ss-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+ }
+ 
+ .ss-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+ }
+ 
+ .ss-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+ }
+ 
+ .ss-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+ }
+ 
+ .ss-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+ }
+ 
+ .ss-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+ }
+ 
+ .ss-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+ }
+ 
+ .ss-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+ }
+
+
+
+
+
+ @media (min-width: 415px) {
+    .grid-row {
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+
+    .col {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 
 .s-0 {
    display: none;
@@ -149,7 +227,7 @@
 .s-o-11 {
    margin-left: 91.66667%;
 }
-
+}
 /* >= Tablet */
 @media (min-width: 769px) {
    .grid-row {
@@ -446,7 +524,7 @@
 } */
 
 /* > PC low resolution */
-@media (min-width: 1024px) and (max-width: 1239px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
    .wide {
        width: 1140px;
    }
